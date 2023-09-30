@@ -1,16 +1,20 @@
-﻿// Задача №7. Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа.
-// 456 -> 6
-// 782 -> 2
-// 918 -> 8
+﻿// Задача №5. Напишите программу, которая на вход принимает одно число (N), 
+// а на выходе показывает все целые числа в промежутке от -N до N.
+// 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4"
+// 2 -> " -2, -1, 0, 1, 2"
 
-Console.WriteLine("введите число");
-int N = Convert.ToInt32(Console.ReadLine());
-if (N < 1000 && N>99)
+Console.WriteLine("введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number > 0)
 {
-int ost = N % 10;
-Console.Write(ost);
+    int negativeNumber = -number;
+    while (negativeNumber <= number)
+    {
+        Console.Write(negativeNumber + ", ");
+        negativeNumber++;        
+    }
 }
 else
 {
-Console.Write("введите трехзначное число");
+    System.Console.WriteLine("Введите положительное число!");
 }
