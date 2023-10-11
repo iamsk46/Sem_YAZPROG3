@@ -19,14 +19,14 @@
 // Вариант 2.
 
 // int[] mass = new int[8];
-// Random rnd = new Random();
+// Random rnd = new Random();  -------------- Класс Random, назвали ее rnd и поместили туда(=) все, что связано с нашим Random. После этого мы можем пользоваться rnd всеми методами относящимяся к классу Random.
 
 // for (int i = 0; i < mass.Length; i++)
 // {
 // mass[i] = rnd.Next(0, 2);
 // }
 
-// System.Console.WriteLine('[' + string.Join(", ", mass) + ']');
+// System.Console.WriteLine('[' + string.Join(", ", mass) + ']'); --------string.Join метод принимает параметр в скобках("знак препинания или пробел между символами", + второй аргумент,в нашем случаем наш массив)
 
 // Вариант 3.
 
